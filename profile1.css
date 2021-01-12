@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson ;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo  a span{
+    color: crimson;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+/* menu btn styling */
+.menu-btn{
+    color: black;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
+/* home section styling */
+.home{
+    display: flex;
+    background: tan;
+    height: 100vh;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+/*background of homepage*/
+.me{
+    height: 500px;
+    width: 500px;
+    float: right;
+}
+.home .home-contents .text-1{
+    font-size: 27px;
+}
+.home .home-contents .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-contents .text-3{
+    font-size: 40px;
+    margin: 5px 0
+}
+.home .home-contents .text-3 span{
+   color: crimson;
+   font-weight: 500;
+}
+
+/* responsive media query start */
+@media (max-width: 991 px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: black;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
